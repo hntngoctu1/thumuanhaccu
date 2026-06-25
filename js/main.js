@@ -123,8 +123,14 @@
       scrollProgress.style.width = (max > 0 ? (y / max) * 100 : 0) + "%";
     }
   };
+  let scrollTicking = false;
+  const requestScroll = () => {
+    if (scrollTicking) return;
+    scrollTicking = true;
+    requestAnimationFrame(() => { onScroll(); scrollTicking = false; });
+  };
   onScroll();
-  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("scroll", requestScroll, { passive: true });
   if (toTop) toTop.addEventListener("click", () =>
     window.scrollTo({ top: 0, behavior: prefersReduced ? "auto" : "smooth" })
   );

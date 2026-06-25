@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://thumuanhaccu.vn/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://thumuanhaccu.vn/cam-nang/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://thumuanhaccu.vn/cam-nang/kiem-tra-dan-organ-cu.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thumuanhaccu.vn/cam-nang/kiem-tra-piano-dien-cu.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thumuanhaccu.vn/cam-nang/ban-nhac-cu-cu-duoc-gia-cao.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thumuanhaccu.vn/cam-nang/dinh-gia-piano-cu.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thumuanhaccu.vn/cam-nang/thanh-ly-dan-am-thanh-karaoke-cu.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://thumuanhaccu.vn/</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://thumuanhaccu.vn/cam-nang/</loc><lastmod>2026-06-25</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://thumuanhaccu.vn/cam-nang/kiem-tra-dan-organ-cu.html</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://thumuanhaccu.vn/cam-nang/kiem-tra-piano-dien-cu.html</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://thumuanhaccu.vn/cam-nang/ban-nhac-cu-cu-duoc-gia-cao.html</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://thumuanhaccu.vn/cam-nang/dinh-gia-piano-cu.html</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://thumuanhaccu.vn/cam-nang/thanh-ly-dan-am-thanh-karaoke-cu.html</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://thumuanhaccu.vn/cam-nang/bao-quan-dan-piano-dung-cach.html</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://thumuanhaccu.vn/cam-nang/nen-mua-dan-cu-hay-moi.html</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://thumuanhaccu.vn/cam-nang/kiem-tra-guitar-cu.html</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://thumuanhaccu.vn/cam-nang/so-sanh-piano-yamaha-kawai-roland.html</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://thumuanhaccu.vn/cam-nang/ban-loa-amply-cu-duoc-gia.html</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://thumuanhaccu.vn/cam-nang/chon-dan-cho-be-hoc-nhac.html</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

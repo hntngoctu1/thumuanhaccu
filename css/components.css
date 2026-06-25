@@ -20,8 +20,8 @@
   transition: transform var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease),
               background var(--dur) var(--ease), color var(--dur) var(--ease),
               border-color var(--dur) var(--ease);
-  will-change: transform;
 }
+.btn:hover, .btn:focus-visible, .btn:active { will-change: transform; }
 .btn svg { width: 18px; height: 18px; }
 .btn:active { transform: translateY(1px) scale(0.99); }
 

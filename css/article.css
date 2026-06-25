@@ -122,6 +122,9 @@
 .article-cta h3 { font-size: var(--fs-h3); margin-bottom: 0.6rem; }
 .article-cta p { color: var(--muted); margin-bottom: 1.4rem; max-width: 48ch; margin-inline: auto; }
 .article-cta .btn-row { justify-content: center; }
+.article-cta__note { font-size: 0.92rem; color: var(--muted); margin: 1.2rem auto 0; max-width: 52ch; }
+.article-cta__note a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+.article-cta__note a:hover { color: var(--gold-deep); }
 
 /* FAQ */
 .article-faq { max-width: 72ch; margin: clamp(2.2rem, 1.5rem + 2vw, 3.2rem) auto 0; }
