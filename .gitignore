@@ -1,5 +1,8 @@
 # Dev tooling / local only
 .claude/
+
+# Handover doc contains the admin password — keep it OUT of the (public) repo
+BAN-GIAO.md
 *.log
 *.output
 .DS_Store

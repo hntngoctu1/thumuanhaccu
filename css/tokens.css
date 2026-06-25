@@ -143,17 +143,17 @@
   --surface-3:     #efe6d3;
   --surface-glass: rgba(255, 253, 248, 0.72);
 
-  --gold:          #9a7322;
+  --gold:          #7c5e1e; /* ≈5.6:1 on light bg — readable for accent text (WCAG AA) */
   --gold-soft:     #b8893b;
   --gold-bright:   #caa24b;
-  --gold-deep:     #7c5e1e;
+  --gold-deep:     #6a4f17;
   --walnut:        #6b4a2b;
   --walnut-deep:   #432d19;
 
   --ivory:         #221a0d;
   --text:          #2d2517;
   --muted:         #6a6051;
-  --muted-2:       #8a7f6a;
+  --muted-2:       #736a57; /* ≈4.6:1 on light bg (WCAG AA) */
   --on-gold:       #1a1304;
 
   --line:          rgba(48, 36, 14, 0.10);

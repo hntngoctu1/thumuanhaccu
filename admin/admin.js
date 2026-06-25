@@ -81,7 +81,7 @@
     const dt = new Date(ts);
     return dt.getDate() + "/" + (dt.getMonth() + 1) + "/" + dt.getFullYear();
   };
-  const statusPill = (s) => '<span class="status status--' + STCLASS[s] + '">' + s + "</span>";
+  const statusPill = (s) => '<span class="status status--' + (STCLASS[s] || "") + '">' + esc(s) + "</span>";
   const custCell = (l) => '<div class="cell-main">' + esc(l.name || "Khách lẻ") + '</div><div class="cell-sub">' + esc(l.phone) + "</div>";
 
   /* ---------- Render: KPIs ---------- */
@@ -170,10 +170,10 @@
     body.innerHTML = rows.map((l) =>
       "<tr><td>" + custCell(l) + "</td><td>" + esc(l.type) + '</td><td class="cell-sub">' + esc(l.condition) +
       '</td><td class="cell-sub">' + esc(l.source || "—") + '</td><td class="cell-sub">' + timeAgo(l.createdAt) + "</td>" +
-      '<td><select class="status-select" data-id="' + l.id + '">' +
-        STATUSES.map((s) => "<option" + (s === l.status ? " selected" : "") + ">" + s + "</option>").join("") +
+      '<td><select class="status-select" data-id="' + esc(l.id) + '">' +
+        STATUSES.map((s) => "<option" + (s === l.status ? " selected" : "") + ">" + esc(s) + "</option>").join("") +
       "</select></td>" +
-      '<td><div class="row-actions"><button class="icon-btn" data-del="' + l.id + '" title="Xóa" aria-label="Xóa"><svg><use href="#i-trash"/></svg></button></div></td></tr>'
+      '<td><div class="row-actions"><button class="icon-btn" data-del="' + esc(l.id) + '" title="Xóa" aria-label="Xóa"><svg><use href="#i-trash"/></svg></button></div></td></tr>'
     ).join("");
   }
 

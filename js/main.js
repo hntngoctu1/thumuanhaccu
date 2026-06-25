@@ -40,7 +40,7 @@
     const dots = $$(".hero-dot", $("#heroDots"));
     const prevBtn = $("#heroPrev"), nextBtn = $("#heroNext");
     if (slides.length < 2) return;
-    let idx = 0, timer = null;
+    let idx = 0, timer = null, userPaused = false;
     const DELAY = 6000;
     const render = () => {
       slides.forEach((s, i) => {
@@ -57,7 +57,7 @@
     };
     const setSlide = (n) => { idx = (n + slides.length) % slides.length; render(); };
     const stop = () => { if (timer) { clearInterval(timer); timer = null; } };
-    const start = () => { if (prefersReduced || timer) return; timer = setInterval(() => setSlide(idx + 1), DELAY); };
+    const start = () => { if (prefersReduced || userPaused || timer) return; timer = setInterval(() => setSlide(idx + 1), DELAY); };
     const go = (n) => { setSlide(n); stop(); start(); };
     dots.forEach((d, i) => d.addEventListener("click", () => go(i)));
     if (nextBtn) nextBtn.addEventListener("click", () => go(idx + 1));
@@ -82,6 +82,22 @@
       sx = null;
     }, { passive: true });
     document.addEventListener("visibilitychange", () => { if (document.hidden) stop(); else if (!paused) start(); });
+    // Explicit pause/play control (WCAG 2.2.2 — auto-advance > 5s needs a stop mechanism)
+    const playBtn = $("#heroPlay");
+    if (playBtn) {
+      const reflect = () => {
+        playBtn.classList.toggle("is-paused", userPaused);
+        playBtn.setAttribute("aria-pressed", String(userPaused));
+        playBtn.setAttribute("aria-label", userPaused ? "Tiếp tục trình chiếu" : "Tạm dừng trình chiếu");
+      };
+      playBtn.addEventListener("click", () => {
+        userPaused = !userPaused;
+        if (userPaused) stop(); else start();
+        reflect();
+      });
+      if (prefersReduced) { userPaused = true; } // autoplay never runs; show as paused
+      reflect();
+    }
     render();
     start();
   })();
@@ -228,6 +244,7 @@
     panel.id = pid;
     trigger.setAttribute("aria-controls", pid);
     panel.setAttribute("aria-hidden", "true"); // collapsed: remove from AT tree
+    panel.inert = true; // also block focus reaching any future controls inside
     trigger.addEventListener("click", () => {
       const isOpen = item.classList.contains("is-open");
       accItems.forEach((other) => {
@@ -236,11 +253,13 @@
         const op = $(".acc-panel", other);
         op.style.maxHeight = null;
         op.setAttribute("aria-hidden", "true");
+        op.inert = true;
       });
       if (!isOpen) {
         item.classList.add("is-open");
         trigger.setAttribute("aria-expanded", "true");
         panel.removeAttribute("aria-hidden");
+        panel.inert = false;
         panel.style.maxHeight = panel.scrollHeight + "px";
       }
     });

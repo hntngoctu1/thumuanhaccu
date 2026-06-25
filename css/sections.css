@@ -86,6 +86,21 @@
 .hero-arrow--prev svg { transform: rotate(180deg); }
 .hero-arrow--next { right: clamp(0.8rem, 2vw, 2rem); }
 
+/* Slideshow pause / play control (WCAG 2.2.2) — bottom-left, clear of dots & dock */
+.hero-play {
+  position: absolute; bottom: 1.9rem; left: clamp(0.8rem, 2vw, 2rem); z-index: 4;
+  width: 40px; height: 40px; border-radius: 50%; cursor: pointer;
+  display: grid; place-items: center;
+  color: #f6f1e7; border: 1px solid rgba(246,241,231,0.22);
+  background: rgba(8,8,10,0.32); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  transition: all var(--dur) var(--ease-out);
+}
+.hero-play:hover { border-color: var(--line-gold); background: rgba(8,8,10,0.55); color: var(--gold); }
+.hero-play .hp-ico { width: 17px; height: 17px; fill: currentColor; }
+.hero-play .hp-play { display: none; }
+.hero-play.is-paused .hp-pause { display: none; }
+.hero-play.is-paused .hp-play { display: block; }
+
 /* Header sits over the always-dark hero → top scrim + force light text for contrast */
 .site-header:not(.is-scrolled) {
   background: linear-gradient(180deg, rgba(8,8,10,0.62) 0%, rgba(8,8,10,0.2) 62%, transparent 100%);
@@ -102,7 +117,12 @@
 @media (max-width: 760px) {
   .hero-arrow { display: none; }
   .hero-slide__inner { max-width: 100%; }
-  .hero-slide { padding-bottom: 4.5rem; }
+  .hero-slide { padding-bottom: 5.5rem; }
+}
+/* Lift hero controls above the sticky mobile CTA bar so they aren't occluded */
+@media (max-width: 620px) {
+  .hero-dots { bottom: calc(64px + 1.4rem); }
+  .hero-play { bottom: calc(64px + 1.2rem); }
 }
 
 /* ---------------- STATS BAR ---------------- */

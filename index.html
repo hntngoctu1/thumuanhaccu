@@ -245,6 +245,10 @@
         <button class="hero-dot" type="button" aria-label="Tới slide 2"></button>
         <button class="hero-dot" type="button" aria-label="Tới slide 3"></button>
       </div>
+      <button class="hero-play" id="heroPlay" type="button" aria-pressed="false" aria-label="Tạm dừng trình chiếu">
+        <svg class="hp-ico hp-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="6" width="3.3" height="12" rx="1.1"/><rect x="13.7" y="6" width="3.3" height="12" rx="1.1"/></svg>
+        <svg class="hp-ico hp-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.4v13.2L19 12z"/></svg>
+      </button>
     </section>
 
     <!-- ===== STATS ===== -->
@@ -555,7 +559,7 @@
               <input id="qPhone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="VD: 0938 818 871" required />
             </div>
             <button class="btn btn--gold btn--block btn--lg" type="submit">Nhận báo giá ngay<svg><use href="#i-arr"/></svg></button>
-            <div class="form-success" id="quoteSuccess"><svg><use href="#i-check"/></svg><span></span></div>
+            <div class="form-success" id="quoteSuccess" role="status" aria-live="polite"><svg><use href="#i-check"/></svg><span></span></div>
             <p class="form-note">Hoặc <a href="https://zalo.me/0938818871" target="_blank" rel="noopener">gửi ảnh qua Zalo 0938 818 871</a> để định giá trong 5 phút.</p>
           </form>
         </div>
@@ -737,8 +741,8 @@
   </div>
 
   <!-- ===== Scripts ===== -->
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="js/vendor/gsap.min.js" defer></script>
+  <script src="js/vendor/ScrollTrigger.min.js" defer></script>
   <script src="js/main.js" defer></script>
   <script src="js/i18n.js" defer></script>
 </body>
