@@ -63,6 +63,12 @@ Piano cơ 5–60tr · Piano điện 2–25tr · Organ 800K–15tr · Guitar 300K
 
 ---
 
+## 4b) 📚 CẨM NANG (BLOG — hút traffic/SEO)
+
+- Mục **Cẩm nang**: https://thumuanhaccu.vercel.app/cam-nang/ — gồm 5 bài chuẩn SEO (kiểm tra organ/piano điện cũ, bán nhạc cụ được giá, định giá piano, thanh lý dàn âm thanh). Mỗi bài có dữ liệu cấu trúc Article + FAQ + Breadcrumb để dễ lên top Google.
+- Đã liên kết: thanh menu **Cẩm nang**, mục giới thiệu 3 bài ngay trang chủ, và footer. Đã thêm vào `sitemap.xml`.
+- **Thêm bài mới:** tạo file `cam-nang/<đường-dẫn>.html` theo mẫu một bài có sẵn (copy 1 file, đổi tiêu đề/nội dung/JSON-LD), rồi thêm thẻ vào `cam-nang/index.html` và 1 dòng vào `sitemap.xml`. (Hoặc nhờ tôi viết & dựng thêm bài.)
+
 ## 5) 🛠️ HƯỚNG DẪN CẬP NHẬT NHANH
 
 - **Đổi số điện thoại:** tìm-thay trong `index.html`: hiển thị `0938 818 871`; link gọi `tel:+84938818871`; Zalo `zalo.me/0938818871`.
