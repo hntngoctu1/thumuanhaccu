@@ -141,6 +141,12 @@
     "Bộ Trống": "Drum Kit",
     // Brands
     "Thu mua mọi thương hiệu": "We buy every brand",
+    // Blog teaser
+    "Cẩm nang": "Guides",
+    "Chia sẻ kiến thức nhạc cụ": "Instrument knowledge & tips",
+    "Kinh nghiệm kiểm tra, định giá & mua bán nhạc cụ cũ — giúp bạn không bị thiệt.": "Tips on inspecting, valuing & trading used instruments — so you never lose out.",
+    "Đọc tiếp": "Read more",
+    "Xem tất cả bài viết": "View all articles",
     // Quote
     "Nhận báo giá": "Get a quote",
     "Định giá miễn phí trong 60 phút": "Free valuation within 60 minutes",
