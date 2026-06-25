@@ -1,0 +1,6 @@
+# Don't publish dev tooling or internal docs to the live site
+.claude
+.git
+.gitignore
+*.md
+serve_nocache.py

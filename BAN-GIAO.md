@@ -8,10 +8,11 @@
 
 | Trang | Link |
 |---|---|
-| **Trang chính** | https://hntngoctu1.github.io/thumuanhaccu/ |
-| **Trang quản trị** | https://hntngoctu1.github.io/thumuanhaccu/admin/ |
+| **Trang chính** | https://thumuanhaccu.vercel.app |
+| **Trang quản trị** | https://thumuanhaccu.vercel.app/admin/ |
 
-Hosting: **GitHub Pages** (miễn phí, HTTPS, tự build). Repo: `hntngoctu1/thumuanhaccu`.
+Hosting: **Vercel** (miễn phí, HTTPS). Repo nguồn: `hntngoctu1/thumuanhaccu` — **nên để Private** để giấu mã nguồn (Vercel vẫn chạy bình thường vì deploy độc lập).
+Cập nhật web sau này: chạy `npx vercel --prod` trong thư mục dự án (hoặc vào Vercel → Connect Git để tự deploy mỗi khi push).
 
 ---
 
