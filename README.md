@@ -6,6 +6,22 @@ Trang web là **tĩnh (static)** — chỉ gồm HTML/CSS/JS thuần, **không c
 
 ---
 
+## 🌍 ĐÃ PUBLIC — link gửi khách
+
+- **Trang chính:** https://hntngoctu1.github.io/thumuanhaccu/
+- **Trang quản trị:** https://hntngoctu1.github.io/thumuanhaccu/admin/
+- Đang chạy trên **GitHub Pages** (repo công khai: `hntngoctu1/thumuanhaccu`), HTTPS, miễn phí, tự build.
+
+**Cập nhật site sau này:** sửa file → `git add -A && git commit -m "..." && git push` → GitHub Pages tự build lại sau ~1–2 phút.
+
+**Gắn tên miền thật `thumuanhaccu.vn`:** trong repo → Settings → Pages → Custom domain, nhập `thumuanhaccu.vn`, rồi trỏ DNS (CNAME → `hntngoctu1.github.io`). Lúc đó các thẻ canonical/og đã sẵn trỏ đúng domain.
+
+> ⚠️ Ảnh xem trước khi chia sẻ link (og-image) chưa có — khi gửi link qua Zalo/Facebook sẽ chưa hiện ảnh thu nhỏ. Thêm file `og-image.jpg` (1200×630) vào thư mục gốc để có ảnh preview.
+
+---
+
+---
+
 ## 1. Cấu trúc thư mục
 
 ```
