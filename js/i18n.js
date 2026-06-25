@@ -14,8 +14,8 @@
     en: "Buy Used Musical Instruments at Top Prices in HCMC | Doremi 2000",
   };
   var DESC = {
-    vi: "Trung Tâm Âm Nhạc Đô Rê Mi 2000 — chuyên thu mua nhạc cụ cũ giá cao tận nơi tại TP.HCM: organ, piano cơ & điện, guitar, trống và thiết bị âm thanh. Định giá miễn phí, thanh toán tiền mặt ngay. Hotline/Zalo 0938 818 871.",
-    en: "Doremi 2000 Music Center — we buy used musical instruments at top prices, on-site in HCMC: organ, acoustic & digital piano, guitar, drums and audio equipment. Free valuation, instant cash. Hotline/Zalo 0938 818 871.",
+    vi: "Thu mua nhạc cụ & thiết bị âm thanh cũ giá cao tận nơi TP.HCM: organ, piano, guitar, trống, loa, amply. Định giá nhanh qua Zalo, trả tiền ngay — 0938 818 871.",
+    en: "We buy used instruments & audio gear at top prices, on-site in HCMC: organ, piano, guitar, drums, speakers, amps. Fast quote via Zalo, instant cash — 0938 818 871.",
   };
 
   /* ---- Hero elements with inline markup (data-i18n) → EN innerHTML ---- */
@@ -26,6 +26,7 @@
     "hero-lead2": 'Old, new, display or pre-owned — we <strong>value it at its true worth</strong> and buy it right at your home.',
     "hero-h3": 'Clearing out audio gear — <span class="text-gold serif-italic">top price, hassle-free</span>',
     "hero-lead3": 'Speakers, amplifiers, mixers, karaoke systems, TVs… <strong>any quantity accepted</strong>, with completely free transport.',
+    "areas-note": 'Don\'t see your area? <a href="https://zalo.me/0938818871" target="_blank" rel="noopener">Message Zalo 0938 818 871</a> — we still come to you.',
   };
 
   /* ---- Suffix map for animated stats ---- */
@@ -225,6 +226,12 @@
     "Về đầu trang ↑": "Back to top ↑",
     // Dock
     "Chat Zalo": "Chat Zalo",
+    // Service-area section
+    "Khu vực phục vụ": "Service areas",
+    "Thu mua tận nơi khắp TP.HCM & lân cận": "On-site buying across HCMC & nearby provinces",
+    "Đội ngũ Doremi 2000 đến tận nhà định giá & thu mua nhạc cụ, thiết bị âm thanh cũ — nhanh trong ngày, không ngại xa.": "The Doremi 2000 team comes to your home to value & buy used instruments and audio gear — often same-day, no matter the distance.",
+    "Các quận / huyện TP.HCM": "HCMC districts",
+    "Tỉnh lân cận": "Nearby provinces",
   };
 
   function setLang(lang) {
