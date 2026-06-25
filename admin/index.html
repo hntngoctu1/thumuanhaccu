@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>document.documentElement.className += " js";(function(){try{var t=localStorage.getItem('doremi-theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
+  <title>Bảng điều khiển · Doremi 2000</title>
+  <meta name="theme-color" content="#0a0a0c" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/tokens.css" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <!-- ===== SVG sprite ===== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+    <symbol id="i-note" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></symbol>
+    <symbol id="i-dash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></symbol>
+    <symbol id="i-inbox" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.5 5.5 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.5-6.5A2 2 0 0 0 16.8 4H7.2a2 2 0 0 0-1.7 1.5z"/></symbol>
+    <symbol id="i-cog" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.6 1.6 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-2.7 1.1V21a2 2 0 0 1-4 0v-.2A1.6 1.6 0 0 0 7 19.4a1.6 1.6 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1A1.6 1.6 0 0 0 3 13.9a2 2 0 0 1 0-4 1.6 1.6 0 0 0 1.6-2.7l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1A1.6 1.6 0 0 0 9 3.6a2 2 0 0 1 4 0 1.6 1.6 0 0 0 2.7 1.1l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.6 1.6 0 0 0 1.1 2.7 2 2 0 0 1 0 4 1.6 1.6 0 0 0-1.1 1.4z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></symbol>
+    <symbol id="i-logout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9M13.7 21a2 2 0 0 1-3.4 0"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6"/></symbol>
+    <symbol id="i-trend" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 7h4v4"/></symbol>
+    <symbol id="i-cash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 12h.01M18 12h.01"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.5 6.5 0 0 0 9.8 9.8z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  </defs></svg>
+
+  <!-- ===== LOGIN ===== -->
+  <div class="auth" id="loginView">
+    <form class="auth__card" id="loginForm" novalidate>
+      <a class="brand" href="../index.html">
+        <span class="brand__mark"><svg><use href="#i-note"/></svg></span>
+        <span><span class="brand__name">Doremi 2000</span><br /><span class="brand__sub">Bảng điều khiển</span></span>
+      </a>
+      <h1>Đăng nhập quản trị</h1>
+      <p class="sub">Quản lý yêu cầu báo giá &amp; theo dõi hoạt động thu mua.</p>
+      <div class="field"><label for="email">Email</label><input id="email" type="email" placeholder="admin@doremi.vn" value="admin@doremi.vn" /></div>
+      <div class="field"><label for="pass">Mật khẩu</label><input id="pass" type="password" placeholder="••••••••" value="doremi2000" /></div>
+      <button class="btn btn--gold btn--block" type="submit">Đăng nhập</button>
+      <div class="auth__hint">Bản demo — dùng <code>admin@doremi.vn</code> / <code>doremi2000</code> (hoặc bất kỳ thông tin nào) để vào.</div>
+    </form>
+  </div>
+
+  <!-- ===== APP ===== -->
+  <div class="admin" id="appView" hidden>
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar__brand">
+        <a class="brand" href="../index.html">
+          <span class="brand__mark"><svg><use href="#i-note"/></svg></span>
+          <span class="brand__text"><span class="brand__name">Doremi 2000</span><span class="brand__sub">Quản trị</span></span>
+        </a>
+      </div>
+      <nav class="sidebar__nav">
+        <button class="nav-item is-active" data-view="overview"><svg><use href="#i-dash"/></svg>Tổng quan</button>
+        <button class="nav-item" data-view="leads"><svg><use href="#i-inbox"/></svg>Yêu cầu báo giá<span class="nav-item__badge" id="leadBadge">0</span></button>
+        <button class="nav-item" data-view="instruments"><svg><use href="#i-note"/></svg>Bảng giá nhạc cụ</button>
+        <button class="nav-item" data-view="settings"><svg><use href="#i-cog"/></svg>Cài đặt</button>
+      </nav>
+      <div class="sidebar__foot">
+        <div class="sidebar__user"><span class="avatar">L</span><span class="meta"><strong>Cô Linh</strong><span>Quản trị viên</span></span></div>
+        <button class="btn btn--ghost btn--block" id="logoutBtn"><svg><use href="#i-logout"/></svg>Đăng xuất</button>
+      </div>
+    </aside>
+
+    <div class="admin-main">
+      <header class="topbar">
+        <button class="icon-btn topbar__menu" id="menuBtn" aria-label="Mở menu"><svg><use href="#i-dash"/></svg></button>
+        <h1 class="topbar__title" id="pageTitle">Tổng quan</h1>
+        <div class="topbar__search"><svg><use href="#i-search"/></svg><input id="globalSearch" type="search" placeholder="Tìm theo SĐT, loại nhạc cụ..." /></div>
+        <div class="topbar__actions">
+          <button class="icon-btn dot" aria-label="Thông báo"><svg><use href="#i-bell"/></svg></button>
+          <button class="icon-btn" id="themeToggle" type="button" aria-label="Đổi giao diện sáng / tối"><svg class="theme-toggle__moon"><use href="#i-moon"/></svg><svg class="theme-toggle__sun"><use href="#i-sun"/></svg></button>
+          <span class="avatar">L</span>
+        </div>
+      </header>
+
+      <div class="content">
+        <!-- ===== Overview ===== -->
+        <section class="view is-active" id="view-overview">
+          <div class="view__head"><h2 id="greeting">Xin chào, Cô Linh 👋</h2><p>Tổng quan hoạt động thu mua nhạc cụ.</p></div>
+          <div class="kpis" id="kpis"></div>
+          <div class="grid-2">
+            <div class="panel">
+              <div class="panel__head"><h3>Yêu cầu báo giá — 7 ngày qua</h3><span class="muted" id="chartTotal"></span></div>
+              <svg class="chart" id="chart" preserveAspectRatio="none"></svg>
+              <div class="chart-x" id="chartX"></div>
+            </div>
+            <div class="panel">
+              <div class="panel__head"><h3>Theo loại nhạc cụ</h3></div>
+              <div class="bars" id="breakdown"></div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel__head"><h3>Yêu cầu gần đây</h3><button class="btn btn--ghost" data-view="leads">Xem tất cả</button></div>
+            <div class="table-wrap">
+              <table class="data">
+                <thead><tr><th>Khách hàng</th><th>Loại nhạc cụ</th><th>Tình trạng</th><th>Thời gian</th><th>Trạng thái</th></tr></thead>
+                <tbody id="recentLeads"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== Leads ===== -->
+        <section class="view" id="view-leads">
+          <div class="view__head"><h2>Yêu cầu báo giá</h2><p>Quản lý &amp; cập nhật trạng thái các yêu cầu từ khách.</p></div>
+          <div class="toolbar">
+            <div class="search"><svg><use href="#i-search"/></svg><input id="leadSearch" type="search" placeholder="Tìm theo SĐT, tên, loại..." /></div>
+            <select id="statusFilter">
+              <option value="">Tất cả trạng thái</option>
+              <option value="Mới">Mới</option>
+              <option value="Đang xử lý">Đang xử lý</option>
+              <option value="Đã chốt">Đã chốt</option>
+              <option value="Hủy">Hủy</option>
+            </select>
+          </div>
+          <div class="panel" style="padding:0.4rem 0.6rem">
+            <div class="table-wrap">
+              <table class="data">
+                <thead><tr><th>Khách hàng</th><th>Loại nhạc cụ</th><th>Tình trạng</th><th>Nguồn</th><th>Thời gian</th><th>Trạng thái</th><th></th></tr></thead>
+                <tbody id="leadsBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== Instruments / price guide ===== -->
+        <section class="view" id="view-instruments">
+          <div class="view__head"><h2>Bảng giá nhạc cụ</h2><p>Khoảng giá thu mua tham khảo theo từng nhóm.</p></div>
+          <div class="panel" style="padding:0.4rem 0.6rem">
+            <div class="table-wrap">
+              <table class="data">
+                <thead><tr><th>Nhóm</th><th>Thương hiệu tiêu biểu</th><th>Khoảng giá thu mua (tham khảo)</th></tr></thead>
+                <tbody>
+                  <tr><td class="cell-main">Piano cơ</td><td class="cell-sub">Yamaha, Kawai, Steinway</td><td>5 – 60 triệu</td></tr>
+                  <tr><td class="cell-main">Piano điện</td><td class="cell-sub">Yamaha, Roland, Casio</td><td>2 – 25 triệu</td></tr>
+                  <tr><td class="cell-main">Đàn Organ</td><td class="cell-sub">Yamaha, Casio, Korg</td><td>800K – 15 triệu</td></tr>
+                  <tr><td class="cell-main">Guitar</td><td class="cell-sub">Fender, Taylor, Martin</td><td>300K – 10 triệu</td></tr>
+                  <tr><td class="cell-main">Bộ trống</td><td class="cell-sub">Pearl, Tama, Yamaha</td><td>2 – 30 triệu</td></tr>
+                  <tr><td class="cell-main">Loa &amp; Amply</td><td class="cell-sub">Bose, Denon, JBL, Sansui</td><td>500K – 40 triệu</td></tr>
+                  <tr><td class="cell-main">Dàn karaoke</td><td class="cell-sub">California, Arirang, BMB</td><td>2 – 50 triệu</td></tr>
+                  <tr><td class="cell-main">Tivi LCD/LED</td><td class="cell-sub">Samsung, Sony, LG</td><td>500K – 15 triệu</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="note-box"><strong>Lưu ý:</strong> Đây là khoảng giá <strong>tham khảo</strong>. Giá thực tế phụ thuộc tình trạng, đời máy và thương hiệu cụ thể — vui lòng thẩm định trực tiếp.</div>
+        </section>
+
+        <!-- ===== Settings ===== -->
+        <section class="view" id="view-settings">
+          <div class="view__head"><h2>Cài đặt</h2><p>Thông tin doanh nghiệp &amp; tuỳ chọn hệ thống.</p></div>
+          <div class="grid-2">
+            <div class="panel">
+              <div class="panel__head"><h3>Thông tin liên hệ</h3></div>
+              <div class="info-row"><span>Tên trung tâm</span><strong>Đô Rê Mi 2000</strong></div>
+              <div class="info-row"><span>Hotline / Zalo</span><strong>0938 818 871</strong></div>
+              <div class="info-row"><span>Phụ trách</span><strong>Cô Linh</strong></div>
+              <div class="info-row"><span>Khu vực</span><strong>TP. Hồ Chí Minh</strong></div>
+              <div class="info-row"><span>Giờ làm việc</span><strong>08:00 – 20:00</strong></div>
+            </div>
+            <div class="panel">
+              <div class="panel__head"><h3>Hệ thống</h3></div>
+              <div class="info-row"><span>Giao diện</span><button class="btn btn--ghost" id="themeToggle2" type="button">Sáng / Tối</button></div>
+              <div class="info-row"><span>Dữ liệu mẫu</span><button class="btn btn--ghost" id="reseedBtn" type="button">Khôi phục</button></div>
+              <div class="note-box"><strong>Bản demo front-end.</strong> Dữ liệu yêu cầu được lưu cục bộ trong trình duyệt (localStorage). Để nhận &amp; lưu yêu cầu thật từ mọi thiết bị, hãy kết nối form với một backend (ví dụ Formspree, Google Sheets, hoặc Supabase).</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="scrim" id="scrim"></div>
+
+  <script src="admin.js" defer></script>
+</body>
+</html>

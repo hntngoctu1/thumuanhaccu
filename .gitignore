@@ -1,0 +1,7 @@
+# Dev tooling / local only
+.claude/
+*.log
+*.output
+.DS_Store
+Thumbs.db
+node_modules/

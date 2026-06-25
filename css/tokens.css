@@ -1,0 +1,188 @@
+/* ============================================================
+   Doremi 2000 — Design Tokens
+   Direction: "Concert Hall After Dark" — dark luxury,
+   warm brass + walnut accents, cinematic depth.
+   ============================================================ */
+
+:root {
+  /* --- Core surfaces (near-black, slightly warm) --- */
+  --bg:            #0a0a0c;
+  --bg-soft:       #0e0e12;
+  --surface:       #141319;
+  --surface-2:     #1b1922;
+  --surface-3:     #242029;
+  --surface-glass: rgba(20, 19, 25, 0.55);
+
+  /* --- Brass / gold accent family --- */
+  --gold:          #c9a24b;
+  --gold-soft:     #d9b86a;
+  --gold-bright:   #efd690;
+  --gold-deep:     #9c7a30;
+  --walnut:        #6b4a2b;
+  --walnut-deep:   #432d19;
+
+  /* --- Text --- */
+  --ivory:         #f5f0e6;
+  --text:          #ece6d8;
+  --muted:         #a59c8b;
+  --muted-2:       #8a8273;
+  --on-gold:       #1a1304;
+
+  /* --- Lines & borders --- */
+  --line:          rgba(245, 240, 230, 0.08);
+  --line-2:        rgba(245, 240, 230, 0.14);
+  --line-gold:     rgba(201, 162, 75, 0.28);
+  --line-gold-soft:rgba(201, 162, 75, 0.14);
+
+  /* --- Brand contact colors --- */
+  --zalo:          #0068ff;
+  --messenger:     #1877f2;
+  --call:          var(--gold);
+
+  /* --- Gradients --- */
+  --grad-gold:     linear-gradient(135deg, #efd690 0%, #c9a24b 46%, #9c7a30 100%);
+  --grad-gold-text:linear-gradient(100deg, #f3e3b4 0%, #d9b86a 40%, #c9a24b 70%, #a07e30 100%);
+  --grad-surface:  linear-gradient(180deg, rgba(27,25,34,0.9) 0%, rgba(16,15,20,0.9) 100%);
+  --grad-fade-b:   linear-gradient(180deg, transparent, var(--bg));
+  --spotlight:     radial-gradient(120% 90% at 50% -10%,
+                     rgba(201,162,75,0.16) 0%,
+                     rgba(201,162,75,0.05) 28%,
+                     transparent 60%);
+  --spotlight-side:radial-gradient(80% 60% at 85% 20%,
+                     rgba(107,74,43,0.22) 0%, transparent 55%);
+
+  /* --- Typography --- */
+  --font-display: "Playfair Display", "Times New Roman", serif;
+  --font-body:    "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --fs-hero:   clamp(2.7rem, 1.0rem + 6.6vw, 6.25rem);
+  --fs-display:clamp(2.2rem, 1.2rem + 4vw, 4.5rem);
+  --fs-h2:     clamp(1.9rem, 1.25rem + 2.6vw, 3.4rem);
+  --fs-h3:     clamp(1.3rem, 1.05rem + 1vw, 1.85rem);
+  --fs-h4:     clamp(1.1rem, 1rem + 0.4vw, 1.3rem);
+  --fs-lead:   clamp(1.06rem, 0.98rem + 0.5vw, 1.35rem);
+  --fs-body:   1.0625rem;
+  --fs-sm:     0.9375rem;
+  --fs-xs:     0.8125rem;
+  --fs-label:  0.75rem;
+
+  --lh-tight:  1.06;
+  --lh-snug:   1.25;
+  --lh-body:   1.7;
+
+  --tracking-label: 0.22em;
+  --tracking-wide:  0.04em;
+
+  /* --- Spacing rhythm --- */
+  --space-1: 0.5rem;
+  --space-2: 0.875rem;
+  --space-3: 1.25rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --space-6: 4.5rem;
+  --space-section: clamp(4.5rem, 3rem + 7vw, 9.5rem);
+  --gutter: clamp(1.25rem, 0.5rem + 3vw, 3rem);
+
+  /* --- Radii --- */
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 22px;
+  --r-xl: 30px;
+  --r-pill: 999px;
+
+  /* --- Shadows & glows --- */
+  --shadow-sm:  0 2px 8px rgba(0,0,0,0.35);
+  --shadow-md:  0 16px 40px -18px rgba(0,0,0,0.7);
+  --shadow-lg:  0 40px 90px -40px rgba(0,0,0,0.85);
+  --glow-gold:  0 0 0 1px var(--line-gold), 0 18px 50px -22px rgba(201,162,75,0.45);
+  --glow-soft:  0 0 60px -10px rgba(201,162,75,0.22);
+
+  /* --- Layout --- */
+  --container: 1240px;
+  --container-narrow: 880px;
+  --header-h: 80px;
+
+  /* --- Motion --- */
+  --dur-fast:   180ms;
+  --dur:        320ms;
+  --dur-slow:   620ms;
+  --ease:       cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out:   cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* --- z-index scale --- */
+  --z-bg: 0;
+  --z-base: 1;
+  --z-grain: 50;
+  --z-dock: 60;
+  --z-header: 80;
+  --z-overlay: 90;
+  --z-menu: 100;
+
+  /* --- Theme-swappable surfaces (overridden in light) --- */
+  --header-bg:     rgba(10, 10, 12, 0.72);
+  --scrim:         rgba(8, 8, 10, 0.96);
+  --scrim-bar:     rgba(10, 10, 12, 0.92);
+  --input-bg:      rgba(8, 8, 10, 0.6);
+  --input-bg-focus:rgba(8, 8, 10, 0.85);
+  --footer-end:    #060608;
+  --grain-opacity: 0.05;
+  --band-bg:       linear-gradient(180deg, rgba(20, 19, 25, 0.5), transparent);
+
+  color-scheme: dark;
+}
+
+/* ============================================================
+   LIGHT THEME — "Warm Atelier" (ivory · walnut · brass)
+   ============================================================ */
+:root[data-theme="light"] {
+  --bg:            #f4eee1;
+  --bg-soft:       #efe7d6;
+  --surface:       #fffdf8;
+  --surface-2:     #f7f0e2;
+  --surface-3:     #efe6d3;
+  --surface-glass: rgba(255, 253, 248, 0.72);
+
+  --gold:          #9a7322;
+  --gold-soft:     #b8893b;
+  --gold-bright:   #caa24b;
+  --gold-deep:     #7c5e1e;
+  --walnut:        #6b4a2b;
+  --walnut-deep:   #432d19;
+
+  --ivory:         #221a0d;
+  --text:          #2d2517;
+  --muted:         #6a6051;
+  --muted-2:       #8a7f6a;
+  --on-gold:       #1a1304;
+
+  --line:          rgba(48, 36, 14, 0.10);
+  --line-2:        rgba(48, 36, 14, 0.17);
+  --line-gold:     rgba(154, 115, 34, 0.40);
+  --line-gold-soft:rgba(154, 115, 34, 0.20);
+
+  --grad-gold:     linear-gradient(135deg, #d9b86a 0%, #b8893b 46%, #8a6a22 100%);
+  --grad-gold-text:linear-gradient(100deg, #a87f24 0%, #7c5e1e 70%, #6b4a2b 100%);
+  --grad-surface:  linear-gradient(180deg, #fffdf8 0%, #f6efe0 100%);
+  --spotlight:     radial-gradient(120% 90% at 50% -10%,
+                     rgba(184,137,59,0.16) 0%, rgba(184,137,59,0.05) 30%, transparent 60%);
+  --spotlight-side:radial-gradient(80% 60% at 85% 20%,
+                     rgba(107,74,43,0.12) 0%, transparent 55%);
+
+  --shadow-sm:  0 2px 8px rgba(60,45,20,0.12);
+  --shadow-md:  0 16px 40px -22px rgba(60,45,20,0.32);
+  --shadow-lg:  0 40px 90px -50px rgba(60,45,20,0.4);
+  --glow-gold:  0 0 0 1px var(--line-gold), 0 18px 50px -26px rgba(154,115,34,0.4);
+  --glow-soft:  0 0 70px -18px rgba(184,137,59,0.3);
+
+  --header-bg:     rgba(248, 243, 233, 0.82);
+  --scrim:         rgba(247, 241, 230, 0.97);
+  --scrim-bar:     rgba(248, 243, 233, 0.94);
+  --input-bg:      #fffdf8;
+  --input-bg-focus:#ffffff;
+  --footer-end:    #ece3d2;
+  --grain-opacity: 0.022;
+  --band-bg:       linear-gradient(180deg, rgba(255,253,248,0.7), transparent);
+
+  color-scheme: light;
+}
