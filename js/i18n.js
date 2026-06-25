@@ -51,6 +51,7 @@
     "Organ · Guitar · Trống · Piano": "Organ · Guitar · Drums · Piano",
     "Loa · Amply · Karaoke · Âm thanh sân khấu": "Speakers · Amplifiers · Karaoke · Stage Audio",
     "Báo giá qua Zalo": "Quote via Zalo",
+    "Định giá nhanh qua Zalo": "Fast quote via Zalo",
     "Thanh toán tiền mặt ngay": "Instant cash payment",
     "Thu mua mọi tình trạng": "Any condition accepted",
     "Thẩm định tận nơi": "On-site appraisal",
