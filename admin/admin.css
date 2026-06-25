@@ -88,6 +88,11 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--ivory); line-height:
   font-size: var(--fs-xs); color: var(--muted);
 }
 .auth__hint code { color: var(--gold); font-weight: 600; }
+.auth__error {
+  margin-bottom: 1rem; padding: 0.7rem 0.9rem; border-radius: var(--r-md);
+  background: rgba(201,138,138,0.12); border: 1px solid rgba(201,138,138,0.4);
+  color: #d99a9a; font-size: var(--fs-xs);
+}
 
 /* Form fields (shared) */
 .field { display: flex; flex-direction: column; gap: 0.45rem; margin-bottom: 1.1rem; }

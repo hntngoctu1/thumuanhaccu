@@ -252,10 +252,21 @@
   }
   function showLogin() { appView.hidden = true; loginView.hidden = false; }
 
+  // Client admin account (front-end demo — for real multi-device security, move auth to a backend)
+  const ACCOUNT = { email: "admin@doremi2000.vn", pass: "Doremi@2000" };
   $("#loginForm").addEventListener("submit", (e) => {
     e.preventDefault();
-    try { sessionStorage.setItem(AUTH_KEY, "1"); } catch (err) {}
-    showApp();
+    const email = ($("#email").value || "").trim().toLowerCase();
+    const pass = $("#pass").value || "";
+    const err = $("#loginError");
+    if (email === ACCOUNT.email && pass === ACCOUNT.pass) {
+      try { sessionStorage.setItem(AUTH_KEY, "1"); } catch (e2) {}
+      if (err) err.style.display = "none";
+      showApp();
+    } else if (err) {
+      err.textContent = "Email hoặc mật khẩu chưa đúng. Vui lòng kiểm tra lại.";
+      err.style.display = "block";
+    }
   });
   $("#logoutBtn").addEventListener("click", () => {
     try { sessionStorage.removeItem(AUTH_KEY); } catch (err) {}

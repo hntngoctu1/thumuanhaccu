@@ -39,15 +39,16 @@
   <div class="auth" id="loginView">
     <form class="auth__card" id="loginForm" novalidate>
       <a class="brand" href="../index.html">
-        <span class="brand__mark"><svg viewBox="0 0 44 44" aria-hidden="true" focusable="false"><circle cx="22" cy="22" r="21" fill="none" stroke="currentColor" stroke-opacity=".4" stroke-width="1"/><line x1="12" y1="29.5" x2="32" y2="14.5" stroke="currentColor" stroke-width="1" stroke-opacity=".55"/><circle cx="12" cy="29.5" r="2.6" fill="currentColor" fill-opacity=".55"/><circle cx="22" cy="22" r="3.1" fill="currentColor" fill-opacity=".78"/><circle cx="32" cy="14.5" r="3.7" fill="currentColor"/><line x1="34.7" y1="14.5" x2="34.7" y2="6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span>
+        <span class="brand__mark"><svg viewBox="0 0 44 44" aria-hidden="true" focusable="false"><circle cx="22" cy="22" r="21" fill="none" stroke="currentColor" stroke-opacity=".4" stroke-width="1"/><path d="M18.5 29V14.2l9-1.7V25" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="15.4" cy="29" rx="3.7" ry="3" fill="currentColor"/><ellipse cx="24.4" cy="27" rx="3.7" ry="3" fill="currentColor"/></svg></span>
         <span><span class="brand__name">Doremi <span class="brand__year">2000</span></span><br /><span class="brand__sub">Bảng điều khiển</span></span>
       </a>
       <h1>Đăng nhập quản trị</h1>
       <p class="sub">Quản lý yêu cầu báo giá &amp; theo dõi hoạt động thu mua.</p>
-      <div class="field"><label for="email">Email</label><input id="email" type="email" placeholder="admin@doremi.vn" value="admin@doremi.vn" /></div>
-      <div class="field"><label for="pass">Mật khẩu</label><input id="pass" type="password" placeholder="••••••••" value="doremi2000" /></div>
+      <div class="field"><label for="email">Email</label><input id="email" type="email" autocomplete="username" placeholder="admin@doremi2000.vn" value="admin@doremi2000.vn" /></div>
+      <div class="field"><label for="pass">Mật khẩu</label><input id="pass" type="password" autocomplete="current-password" placeholder="••••••••" value="Doremi@2000" /></div>
+      <div class="auth__error" id="loginError" style="display:none"></div>
       <button class="btn btn--gold btn--block" type="submit">Đăng nhập</button>
-      <div class="auth__hint">Bản demo — dùng <code>admin@doremi.vn</code> / <code>doremi2000</code> (hoặc bất kỳ thông tin nào) để vào.</div>
+      <div class="auth__hint">Tài khoản quản trị: <code>admin@doremi2000.vn</code> · mật khẩu <code>Doremi@2000</code></div>
     </form>
   </div>
 
@@ -56,7 +57,7 @@
     <aside class="sidebar" id="sidebar">
       <div class="sidebar__brand">
         <a class="brand" href="../index.html">
-          <span class="brand__mark"><svg viewBox="0 0 44 44" aria-hidden="true" focusable="false"><circle cx="22" cy="22" r="21" fill="none" stroke="currentColor" stroke-opacity=".4" stroke-width="1"/><line x1="12" y1="29.5" x2="32" y2="14.5" stroke="currentColor" stroke-width="1" stroke-opacity=".55"/><circle cx="12" cy="29.5" r="2.6" fill="currentColor" fill-opacity=".55"/><circle cx="22" cy="22" r="3.1" fill="currentColor" fill-opacity=".78"/><circle cx="32" cy="14.5" r="3.7" fill="currentColor"/><line x1="34.7" y1="14.5" x2="34.7" y2="6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span>
+          <span class="brand__mark"><svg viewBox="0 0 44 44" aria-hidden="true" focusable="false"><circle cx="22" cy="22" r="21" fill="none" stroke="currentColor" stroke-opacity=".4" stroke-width="1"/><path d="M18.5 29V14.2l9-1.7V25" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="15.4" cy="29" rx="3.7" ry="3" fill="currentColor"/><ellipse cx="24.4" cy="27" rx="3.7" ry="3" fill="currentColor"/></svg></span>
           <span class="brand__text"><span class="brand__name">Doremi <span class="brand__year">2000</span></span><span class="brand__sub">Quản trị</span></span>
         </a>
       </div>
