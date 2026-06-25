@@ -94,6 +94,7 @@
 .site-header:not(.is-scrolled) .nav__link:hover,
 .site-header:not(.is-scrolled) .nav__link.is-active { color: #f6f1e7; }
 .site-header:not(.is-scrolled) .brand__name { color: #f6f1e7; }
+.site-header:not(.is-scrolled) .brand__year { background: none; -webkit-text-fill-color: #e7c878; color: #e7c878; }
 .site-header:not(.is-scrolled) .nav__call { border-color: rgba(246,241,231,0.35); }
 .site-header:not(.is-scrolled) .lang-toggle { color: rgba(246,241,231,0.7); border-color: rgba(246,241,231,0.28); }
 .site-header:not(.is-scrolled) .theme-toggle { color: var(--gold); border-color: rgba(246,241,231,0.22); }
