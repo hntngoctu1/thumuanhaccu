@@ -142,6 +142,12 @@
     "Thu mua giá cao": "Top price",
     "Piano Upright & Điện": "Upright & Digital Piano",
     "Bộ Trống": "Drum Kit",
+    "Piano Yamaha": "Yamaha Piano",
+    "Guitar Điện": "Electric Guitar",
+    "Guitar Bass": "Bass Guitar",
+    "Bàn Mixer": "Mixing Console",
+    "Micro & Karaoke": "Microphones & Karaoke",
+    "Phòng thu & Dàn âm thanh": "Studio & Sound Systems",
     // Brands
     "Thu mua mọi thương hiệu": "We buy every brand",
     // Blog teaser
