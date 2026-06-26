@@ -1,0 +1,67 @@
+backend:
+  name: github
+  repo: hntngoctu1/thumuanhaccu
+  branch: main
+  base_url: https://thumuanhaccu.vercel.app
+  auth_endpoint: api/auth
+
+# Ảnh tải lên sẽ được lưu trong repo và tự hiển thị trên web
+media_folder: "img/uploads"
+public_folder: "/img/uploads"
+
+locale: vi
+site_url: https://thumuanhaccu.vercel.app
+display_url: https://thumuanhaccu.vercel.app
+
+collections:
+  - name: "trangchu"
+    label: "Trang chủ"
+    label_singular: "Trang chủ"
+    files:
+      - name: "gallery"
+        label: "Ảnh nhạc cụ (mục Thư viện)"
+        file: "content/gallery.json"
+        description: "Thêm / sửa / xoá / kéo-thả sắp xếp ảnh hiển thị ở mục Thư viện trên trang chủ."
+        fields:
+          - name: "items"
+            label: "Danh sách ảnh"
+            label_singular: "Ảnh"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { name: "src", label: "Ảnh (tải lên từ máy hoặc dán link)", widget: "image", required: true }
+              - { name: "title", label: "Tên hiển thị (vd: Grand Piano)", widget: "string" }
+              - { name: "alt", label: "Mô tả ảnh (giúp SEO, người khiếm thị)", widget: "string" }
+              - { name: "brands", label: "Thương hiệu (vd: Yamaha · Kawai · Roland)", widget: "string", required: false }
+
+  - name: "camnang"
+    label: "Cẩm nang (Bài viết)"
+    label_singular: "Bài viết"
+    files:
+      - name: "articles"
+        label: "Tất cả bài viết Cẩm nang"
+        file: "content/articles.json"
+        description: "Thêm / sửa / xoá bài viết. Sau khi Lưu (Publish), web tự cập nhật sau 1–2 phút."
+        fields:
+          - name: "articles"
+            label: "Danh sách bài viết"
+            label_singular: "Bài viết"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { name: "slug", label: "Đường dẫn (không dấu, dùng dấu -)", widget: "string", pattern: ['^[a-z0-9-]+$', 'Chỉ gồm chữ thường không dấu, số và dấu gạch ngang'], hint: "vd: kiem-tra-dan-organ-cu" }
+              - { name: "title", label: "Tiêu đề bài (H1)", widget: "string" }
+              - { name: "metaTitle", label: "Tiêu đề SEO (hiện trên Google)", widget: "string" }
+              - { name: "metaDescription", label: "Mô tả SEO (nên 120–160 ký tự)", widget: "text" }
+              - { name: "excerpt", label: "Tóm tắt ngắn (hiện trên thẻ bài viết)", widget: "text" }
+              - { name: "category", label: "Chuyên mục", widget: "select", options: ["Hướng dẫn", "Kinh nghiệm", "Tư vấn chọn mua", "Định giá", "Bảo quản"] }
+              - { name: "readingTime", label: "Thời gian đọc", widget: "string", default: "7 phút đọc" }
+              - { name: "bodyHtml", label: "Nội dung bài (HTML)", widget: "text", hint: "Dùng thẻ <h2>tiêu đề mục</h2>, <p>đoạn văn</p>, <ul><li>gạch đầu dòng</li></ul>, <strong>in đậm</strong>" }
+              - name: "faq"
+                label: "Câu hỏi thường gặp (FAQ)"
+                label_singular: "Câu hỏi"
+                widget: "list"
+                required: false
+                fields:
+                  - { name: "q", label: "Câu hỏi", widget: "string" }
+                  - { name: "a", label: "Trả lời", widget: "text" }
