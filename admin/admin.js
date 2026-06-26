@@ -210,7 +210,7 @@
   $("#statusFilter").addEventListener("change", renderLeads);
 
   /* ---------- View routing ---------- */
-  const titles = { overview: "Tổng quan", leads: "Yêu cầu báo giá", instruments: "Bảng giá nhạc cụ", settings: "Cài đặt" };
+  const titles = { overview: "Tổng quan", leads: "Yêu cầu báo giá", instruments: "Bảng giá nhạc cụ", content: "Nội dung website", settings: "Cài đặt" };
   function go(view) {
     $$(".view").forEach((v) => v.classList.toggle("is-active", v.id === "view-" + view));
     $$(".nav-item").forEach((n) => n.classList.toggle("is-active", n.dataset.view === view));
