@@ -44,6 +44,7 @@
     "Hỏi đáp": "FAQ",
     "Thu mua nhạc cụ": "We buy instruments",
     "Định giá miễn phí": "Free valuation",
+    "Định giá ngay": "Get a Quote Now",
     "Nhận báo giá ngay": "Get a Quote Now",
     "Gọi 0938 818 871": "Call 0938 818 871",
     "Đổi giao diện sáng / tối": "Toggle light / dark theme",
