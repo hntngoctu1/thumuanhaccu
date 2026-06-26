@@ -10,6 +10,9 @@ GAL = os.path.join(ROOT, "content", "gallery.json")
 def esc(s):
     return html.escape(str(s), quote=False)
 
+def a(s):  # attribute-safe escape (quotes too)
+    return html.escape(str(s), quote=True)
+
 _gdata = json.load(open(GAL, encoding="utf-8"))
 items = _gdata["items"] if isinstance(_gdata, dict) else _gdata
 figs = []
@@ -23,7 +26,7 @@ for i, it in enumerate(items):
         '              <img class="gcard__img" src="%s" alt="%s" width="800" height="550" loading="lazy" decoding="async" />\n'
         '            </div>\n'
         '            <figcaption class="gcard__cap"><h3>%s</h3><span>%s</span></figcaption>\n'
-        '          </figure>' % (dd, it["src"], esc(it["alt"]), esc(it["title"]), esc(it["brands"]))
+        '          </figure>' % (dd, a(it["src"]), a(it["alt"]), esc(it["title"]), esc(it["brands"]))
     )
 grid_inner = "\n\n".join(figs)
 

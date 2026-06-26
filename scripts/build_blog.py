@@ -107,6 +107,17 @@ def page(title, desc, canonical, body, jsonld_list, og_type="website"):
       '<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div><div class="grain" aria-hidden="true"></div>'
       + SPRITE + HEADER + '<main id="main">' + body + '</main>' + FOOTER + DOCK + SCRIPTS + '</body></html>')
 
+# ---- Validate slugs (defense-in-depth: don't trust input paths) ----
+import re as _re
+_seen = set()
+for _a in arts:
+    _s = _a.get("slug", "")
+    if not _re.fullmatch(r"[a-z0-9-]+", _s):
+        raise SystemExit("Slug không hợp lệ (chỉ a-z, 0-9, dấu -): %r" % _s)
+    if _s in _seen:
+        raise SystemExit("Trùng slug: %r" % _s)
+    _seen.add(_s)
+
 # ---- Article pages ----
 for i, art in enumerate(arts):
     slug = art["slug"]; canonical = "%s/cam-nang/%s.html" % (SITE, slug)

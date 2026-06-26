@@ -266,7 +266,7 @@
     const af = e.target.dataset.a;
     if (af) {
       a[af] = e.target.value;
-      if (af === "title") $("#artEditorTitle").textContent = "Sửa: " + (a.value || e.target.value);
+      if (af === "title") $("#artEditorTitle").textContent = "Sửa: " + (e.target.value || "bài mới");
       artDirty();
       if (af === "title" || af === "category") renderArticleList();
       return;
@@ -287,7 +287,12 @@
   $("#cmsArticleEditor").addEventListener("blur", (e) => {
     if (arts.editing < 0 || e.target.dataset.a !== "title") return;
     const a = arts.list[arts.editing];
-    if (!a.slug) { a.slug = slugify(a.title); openEditor(arts.editing); }
+    if (!a.slug) {
+      a.slug = slugify(a.title);
+      const slugInput = $('[data-a="slug"]', $("#cmsArticleEditor"));
+      if (slugInput) slugInput.value = a.slug;
+      renderArticleList();
+    }
   }, true);
 
   $("#artClose").addEventListener("click", closeEditor);
