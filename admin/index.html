@@ -92,6 +92,7 @@
         <!-- ===== Overview ===== -->
         <section class="view is-active" id="view-overview">
           <div class="view__head"><h2 id="greeting">Xin chào, Cô Linh 👋</h2><p>Tổng quan hoạt động thu mua nhạc cụ.</p></div>
+          <div class="note-box" id="dataNotice"><strong>Số liệu thật từ form:</strong> các con số dưới đây chỉ tính từ <strong>yêu cầu khách gửi qua form</strong> trên website (lưu ở trình duyệt này) — chưa có yêu cầu thì hiển thị 0. Để nhận yêu cầu từ <strong>mọi thiết bị qua email</strong>, hoặc xem thử giao diện với dữ liệu minh hoạ, vào mục <strong>Cài đặt</strong>.</div>
           <div class="kpis" id="kpis"></div>
           <div class="grid-2">
             <div class="panel">
@@ -176,8 +177,8 @@
             <div class="panel">
               <div class="panel__head"><h3>Hệ thống</h3></div>
               <div class="info-row"><span>Giao diện</span><button class="btn btn--ghost" id="themeToggle2" type="button">Sáng / Tối</button></div>
-              <div class="info-row"><span>Dữ liệu mẫu</span><button class="btn btn--ghost" id="reseedBtn" type="button">Khôi phục</button></div>
-              <div class="note-box"><strong>Bản demo front-end.</strong> Dữ liệu yêu cầu được lưu cục bộ trong trình duyệt (localStorage). Để nhận &amp; lưu yêu cầu thật từ mọi thiết bị, hãy kết nối form với một backend (ví dụ Formspree, Google Sheets, hoặc Supabase).</div>
+              <div class="info-row"><span>Dữ liệu minh hoạ</span><span class="btn-row"><button class="btn btn--ghost" id="reseedBtn" type="button">Nạp demo</button><button class="btn btn--ghost" id="clearBtn" type="button">Xoá hết</button></span></div>
+              <div class="note-box"><strong>Nhận yêu cầu thật từ mọi thiết bị:</strong> hiện form lưu cục bộ trên trình duyệt khách. Để yêu cầu tự về email, lấy <strong>Access Key miễn phí</strong> tại web3forms.com (chỉ cần nhập email, không cần đăng ký tài khoản) rồi gửi cho kỹ thuật gắn vào form. Khi đó mỗi yêu cầu khách gửi sẽ vào thẳng email &amp; vẫn hiện ở bảng này.</div>
             </div>
           </div>
         </section>

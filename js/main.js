@@ -285,6 +285,9 @@
   const form = $("#quoteForm");
   if (form) {
     const success = $("#quoteSuccess");
+    // Optional: paste a FREE Web3Forms access key (get one at web3forms.com — just an email,
+    // no account) to also email each request to the owner from any device. Empty = off.
+    const LEAD_FORM_KEY = "";
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       if (!form.checkValidity()) { form.reportValidity(); return; }
@@ -303,6 +306,21 @@
         });
         localStorage.setItem(LEADS_KEY, JSON.stringify(leads));
       } catch (e) { /* storage unavailable — ignore */ }
+      // Optional real delivery: email the request to the owner (no backend needed).
+      if (LEAD_FORM_KEY) {
+        try {
+          fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: { "Content-Type": "application/json", Accept: "application/json" },
+            body: JSON.stringify({
+              access_key: LEAD_FORM_KEY,
+              subject: "Yêu cầu báo giá mới — Doremi 2000",
+              from_name: "Website Doremi 2000",
+              "Loại nhạc cụ": type, "Tình trạng": cond, "Số điện thoại": phone,
+            }),
+          }).catch(function () {});
+        } catch (e2) { /* ignore */ }
+      }
       if (success) {
         var _lang = document.documentElement.lang === "en" ? "en" : "vi";
         success.querySelector("span").textContent = _lang === "en"

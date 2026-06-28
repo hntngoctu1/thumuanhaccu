@@ -34,13 +34,15 @@
   const load = () => {
     try { leads = JSON.parse(localStorage.getItem(LEADS_KEY) || "[]"); }
     catch (e) { leads = []; }
-    if (!Array.isArray(leads) || leads.length === 0) { leads = seed(); save(); }
+    if (!Array.isArray(leads)) leads = [];
+    // NOTE: no auto-seed. The dashboard shows only REAL requests sent from the
+    // website form (saved in this browser). Use "Nạp dữ liệu minh hoạ" in Settings
+    // to preview the populated UI with clearly-labelled demo data.
   };
   const save = () => { try { localStorage.setItem(LEADS_KEY, JSON.stringify(leads)); } catch (e) {} };
 
   function seed() {
     const now = Date.now(), DAY = 86400000;
-    const names = ["Anh Tuấn","Chị Hương","Cô Mai","Anh Dũng","Chị Lan","Thầy Phong","Anh Bình","Chị Thu","Cô Hạnh","Anh Khoa","Chị Yến","Anh Nam","Chị Trang","Anh Hải","Cô Vân","Anh Sơn","Chị Diệp","Anh Phát"];
     const types = ["Piano cơ","Piano điện","Đàn Organ","Guitar","Trống","Loa / Amply","Dàn karaoke","Tivi"];
     const conds = ["Như mới","Còn tốt","Trung bình","Cũ / Hư"];
     const sources = ["Website","Zalo","Gọi điện","Giới thiệu"];
@@ -53,7 +55,7 @@
       const created = now - rnd(14) * DAY - rnd(DAY);
       out.push({
         id: "S" + (created) + i,
-        name: names[rnd(names.length)],
+        name: "Khách demo",
         phone: pre[rnd(pre.length)] + (100 + rnd(900)) + (1000 + rnd(9000)),
         type: types[rnd(types.length)],
         condition: conds[rnd(conds.length)],
@@ -273,8 +275,13 @@
     showLogin();
   });
   $("#reseedBtn").addEventListener("click", () => {
-    if (!confirm("Khôi phục dữ liệu mẫu? Dữ liệu hiện tại sẽ bị thay thế.")) return;
+    if (!confirm("Nạp dữ liệu minh hoạ (demo)? Dữ liệu hiện tại sẽ bị thay thế.")) return;
     leads = seed(); save(); renderAll();
+  });
+  const clearBtn = $("#clearBtn");
+  if (clearBtn) clearBtn.addEventListener("click", () => {
+    if (!confirm("Xoá toàn bộ yêu cầu khỏi bảng? (không thể hoàn tác)")) return;
+    leads = []; save(); renderAll();
   });
 
   /* ---------- Resize (redraw chart) ---------- */
