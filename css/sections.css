@@ -549,3 +549,13 @@
 @media (max-width: 480px) {
   .hero .btn-row .btn { flex: 1; }
 }
+
+
+/* ===== Cross-promotion: Hệ thống Đại Tôn ===== */
+.ecosystem__title{font-family:var(--font-display);font-size:clamp(1.5rem,3.5vw,2.2rem);margin:.4rem 0 1.4rem;color:var(--text)}
+.ecosystem__grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.eco-card{display:flex;flex-direction:column;gap:8px;padding:24px;border-radius:16px;text-decoration:none;color:inherit;background:var(--surface,#141319);border:1px solid rgba(201,162,75,.22);transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.eco-card:hover{transform:translateY(-4px);border-color:var(--gold,#c9a24b);box-shadow:0 18px 40px rgba(0,0,0,.4)}
+.eco-name{font-family:var(--font-display);font-weight:700;font-size:1.15rem;color:var(--gold-soft,#d9b86a)}
+.eco-desc{font-size:.93rem;line-height:1.55;color:#b3ad9f}
+.eco-go{margin-top:auto;font-weight:600;font-size:.9rem;color:var(--gold,#c9a24b)}

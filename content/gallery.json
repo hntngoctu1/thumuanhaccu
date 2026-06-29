@@ -1,109 +1,109 @@
 {
   "items": [
     {
-      "src": "https://images.pexels.com/photos/112989/pexels-photo-112989.jpeg?auto=compress&cs=tinysrgb&w=900&h=620&fit=crop",
+      "src": "/assets/img/pexels-112989-900.webp",
       "title": "Grand Piano",
       "alt": "Đàn grand piano màu đen trong không gian sang trọng",
       "brands": "Steinway · Kawai · Yamaha"
     },
     {
-      "src": "https://images.pexels.com/photos/21418347/pexels-photo-21418347.jpeg?auto=compress&cs=tinysrgb&w=900&h=620&fit=crop",
+      "src": "/assets/img/pexels-21418347-900.webp",
       "title": "Piano Cơ Upright",
       "alt": "Đàn piano cơ upright trong phòng khách hiện đại",
       "brands": "Yamaha · Kawai · Boston"
     },
     {
-      "src": "https://images.pexels.com/photos/2179373/pexels-photo-2179373.jpeg?auto=compress&cs=tinysrgb&w=900&h=620&fit=crop",
+      "src": "/assets/img/pexels-2179373-900.webp",
       "title": "Piano Điện",
       "alt": "Phím đàn piano điện cận cảnh ánh sáng ấm",
       "brands": "Roland · Yamaha · Casio"
     },
     {
-      "src": "https://images.pexels.com/photos/164951/pexels-photo-164951.jpeg?auto=compress&cs=tinysrgb&w=900&h=620&fit=crop",
+      "src": "/assets/img/pexels-164951-900.webp",
       "title": "Đàn Organ",
       "alt": "Đàn organ keyboard điện tử cận cảnh",
       "brands": "Yamaha · Casio · Korg"
     },
     {
-      "src": "https://images.pexels.com/photos/35113490/pexels-photo-35113490.jpeg?auto=compress&cs=tinysrgb&w=900&h=620&fit=crop",
+      "src": "/assets/img/pexels-35113490-900.webp",
       "title": "Keyboard Sân Khấu",
       "alt": "Keyboard biểu diễn với ánh sáng sân khấu hiện đại",
       "brands": "Roland · Korg · Yamaha"
     },
     {
-      "src": "https://images.pexels.com/photos/9597235/pexels-photo-9597235.jpeg?auto=compress&cs=tinysrgb&w=900&h=620&fit=crop",
+      "src": "/assets/img/pexels-9597235-900.webp",
       "title": "Guitar Acoustic",
       "alt": "Đàn guitar acoustic cận cảnh trên nền gỗ",
       "brands": "Acoustic · Classic · Taylor"
     },
     {
-      "src": "https://images.pexels.com/photos/164774/pexels-photo-164774.jpeg?auto=compress&cs=tinysrgb&w=900&h=620&fit=crop",
+      "src": "/assets/img/pexels-164774-900.webp",
       "title": "Guitar Điện",
       "alt": "Đàn guitar điện màu trắng đặt trong studio",
       "brands": "Fender · Gibson · Epiphone"
     },
     {
-      "src": "https://images.pexels.com/photos/33337479/pexels-photo-33337479.jpeg?auto=compress&cs=tinysrgb&w=900&h=620&fit=crop",
+      "src": "/assets/img/pexels-33337479-900.webp",
       "title": "Guitar Bass",
       "alt": "Dây đàn guitar bass cận cảnh dưới ánh sáng sân khấu",
       "brands": "Fender · Ibanez · Yamaha"
     },
     {
-      "src": "https://images.pexels.com/photos/19452358/pexels-photo-19452358.jpeg?auto=compress&cs=tinysrgb&w=900&h=620&fit=crop",
+      "src": "/assets/img/pexels-19452358-900.webp",
       "title": "Bộ Trống Jazz",
       "alt": "Bộ trống jazz trên sân khấu biểu diễn",
       "brands": "Pearl · Tama · Yamaha"
     },
     {
-      "src": "https://images.pexels.com/photos/5650534/pexels-photo-5650534.jpeg?auto=compress&cs=tinysrgb&w=900&h=620&fit=crop",
+      "src": "/assets/img/pexels-5650534-900.webp",
       "title": "Trống & Cymbal",
       "alt": "Cymbal và trống cận cảnh trong không gian biểu diễn",
       "brands": "Jazz · Pearl · Tama"
     },
     {
-      "src": "https://images.pexels.com/photos/157534/pexels-photo-157534.jpeg?auto=compress&cs=tinysrgb&w=900&h=620&fit=crop",
+      "src": "/assets/img/pexels-157534-900.webp",
       "title": "Loa & Amply",
       "alt": "Loa nghe nhạc bằng gỗ trong phòng hiện đại",
       "brands": "Bose · Denon · JBL"
     },
     {
-      "src": "https://images.pexels.com/photos/3784424/pexels-photo-3784424.jpeg?auto=compress&cs=tinysrgb&w=900&h=620&fit=crop",
+      "src": "/assets/img/pexels-3784424-900.webp",
       "title": "Bàn Mixer",
       "alt": "Bàn mixer âm thanh chuyên nghiệp trong phòng thu",
       "brands": "Yamaha · Soundcraft · Behringer"
     },
     {
-      "src": "https://images.pexels.com/photos/3784221/pexels-photo-3784221.jpeg?auto=compress&cs=tinysrgb&w=900&h=620&fit=crop",
+      "src": "/assets/img/pexels-3784221-900.webp",
       "title": "Mixer & Controller",
       "alt": "Nút điều khiển mixer âm thanh cận cảnh",
       "brands": "Mixer · DJ Controller · Sound card"
     },
     {
-      "src": "https://images.pexels.com/photos/18655161/pexels-photo-18655161.jpeg?auto=compress&cs=tinysrgb&w=900&h=620&fit=crop",
+      "src": "/assets/img/pexels-18655161-900.webp",
       "title": "Micro Karaoke",
       "alt": "Micro biểu diễn cận cảnh với ánh sáng sân khấu",
       "brands": "Shure · Sennheiser · JBL"
     },
     {
-      "src": "https://images.pexels.com/photos/6020432/pexels-photo-6020432.jpeg?auto=compress&cs=tinysrgb&w=900&h=620&fit=crop",
+      "src": "/assets/img/pexels-6020432-900.webp",
       "title": "Dàn Karaoke Gia Đình",
       "alt": "Tivi treo tường và loa thanh trong phòng khách",
       "brands": "Karaoke · Soundbar · Receiver"
     },
     {
-      "src": "https://images.pexels.com/photos/28826800/pexels-photo-28826800.jpeg?auto=compress&cs=tinysrgb&w=900&h=620&fit=crop",
+      "src": "/assets/img/pexels-28826800-900.webp",
       "title": "Phòng Thu & Sound Card",
       "alt": "Micro thu âm và keyboard trong phòng thu cá nhân",
       "brands": "Loa kiểm âm · Sound card · Mixer"
     },
     {
-      "src": "https://images.pexels.com/photos/34992778/pexels-photo-34992778.jpeg?auto=compress&cs=tinysrgb&w=900&h=620&fit=crop",
+      "src": "/assets/img/pexels-34992778-900.webp",
       "title": "Tivi LCD/LED",
       "alt": "Tivi màn hình phẳng trong phòng khách tối giản",
       "brands": "Samsung · Sony · LG"
     },
     {
-      "src": "https://images.pexels.com/photos/164938/pexels-photo-164938.jpeg?auto=compress&cs=tinysrgb&w=900&h=620&fit=crop",
+      "src": "/assets/img/pexels-164938-900.webp",
       "title": "Dàn Âm Thanh Phòng Thu",
       "alt": "Phòng thu với loa kiểm âm và thiết bị âm thanh",
       "brands": "Monitor · Mixer · Studio gear"

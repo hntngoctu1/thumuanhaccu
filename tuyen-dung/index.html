@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tuyển dụng — Doremi 2000 | Gia nhập trung tâm âm nhạc</title>
+  <meta name="description" content="Trung tâm Âm nhạc Doremi 2000 tuyển dụng nhân viên tư vấn nhạc cụ, kỹ thuật viên kiểm định, nhân viên thu mua tận nơi tại TP.HCM. Ứng tuyển ngay!" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://thumuanhaccu.vn/tuyen-dung/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/tokens.css" />
+  <link rel="stylesheet" href="/css/base.css" />
+  <style>
+    .tdpage { max-width: 980px; margin: 0 auto; padding: 0 20px; }
+    .td-header { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; border-bottom: 1px solid rgba(201,162,75,.18); }
+    .td-logo { font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; color: var(--gold); text-decoration: none; }
+    .td-logo small { display: block; font-family: var(--font-body); font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: var(--text-muted, #b3ad9f); }
+    .td-back { color: var(--text, #ece6d8); text-decoration: none; font-size: .92rem; }
+    .td-hero { text-align: center; padding: 56px 0 36px; }
+    .td-eyebrow { letter-spacing: .18em; text-transform: uppercase; font-size: .78rem; color: var(--gold); margin: 0 0 10px; }
+    .td-title { font-family: var(--font-display); font-size: clamp(2rem, 6vw, 3.4rem); margin: 0 0 14px; color: var(--text, #ece6d8); }
+    .td-sub { max-width: 600px; margin: 0 auto 24px; line-height: 1.65; color: #b3ad9f; }
+    .td-btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px; border-radius: 999px; font-weight: 700; text-decoration: none; border: 1px solid var(--gold); cursor: pointer; font: inherit; }
+    .td-btn--gold { background: linear-gradient(135deg, var(--gold-soft, #d9b86a), var(--gold, #c9a24b)); color: #1a1206; border: none; }
+    .td-btn--ghost { background: transparent; color: var(--gold, #c9a24b); }
+    .td-h2 { font-family: var(--font-display); font-size: clamp(1.5rem, 4vw, 2.2rem); margin: 0 0 22px; color: var(--text, #ece6d8); }
+    .td-jobs { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); margin-bottom: 56px; }
+    .td-job { display: flex; flex-direction: column; gap: 10px; padding: 24px; border-radius: 16px; background: var(--surface, #141319); border: 1px solid rgba(201,162,75,.2); }
+    .td-job h3 { font-family: var(--font-display); font-size: 1.15rem; margin: 0; color: var(--gold-soft, #d9b86a); }
+    .td-job .sal { font-weight: 700; color: var(--text, #ece6d8); margin: 0; }
+    .td-job p { color: #b3ad9f; line-height: 1.55; margin: 0; font-size: .94rem; }
+    .td-job ul { margin: 0; padding-left: 18px; color: #b3ad9f; font-size: .9rem; line-height: 1.7; }
+    .td-formwrap { background: var(--surface, #141319); border: 1px solid rgba(201,162,75,.2); border-radius: 20px; padding: 32px; margin-bottom: 56px; }
+    .td-form { display: flex; flex-direction: column; gap: 14px; max-width: 620px; }
+    .td-form label { display: flex; flex-direction: column; gap: 6px; font-weight: 600; font-size: .92rem; color: var(--text, #ece6d8); }
+    .td-form input, .td-form select, .td-form textarea { padding: 12px 14px; border-radius: 10px; border: 1px solid rgba(201,162,75,.28); background: var(--bg, #0a0a0c); color: var(--text, #ece6d8); font: inherit; font-weight: 400; }
+    .td-form input:focus, .td-form select:focus, .td-form textarea:focus { outline: 2px solid var(--gold, #c9a24b); }
+    .td-row { display: grid; gap: 14px; grid-template-columns: 1fr 1fr; }
+    .td-msg { font-weight: 600; margin: 0; }
+    .td-msg.ok { color: var(--gold-soft, #d9b86a); }
+    .td-msg.err { color: #e2776a; }
+    .td-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
+    .hp { position: absolute; left: -9999px; }
+    .td-footer { border-top: 1px solid rgba(201,162,75,.18); padding: 28px 0; text-align: center; color: #b3ad9f; font-size: .9rem; }
+    @media (max-width: 560px) { .td-row { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="tdpage">
+    <header class="td-header">
+      <a class="td-logo" href="/">Doremi 2000<small>Trung tâm âm nhạc</small></a>
+      <a class="td-back" href="/">← Về trang chủ</a>
+    </header>
+
+    <section class="td-hero">
+      <p class="td-eyebrow">Tuyển dụng</p>
+      <h1 class="td-title">Gia nhập Doremi 2000</h1>
+      <p class="td-sub">Môi trường yêu âm nhạc, thu nhập hấp dẫn, được đào tạo bài bản. Cùng phát triển sự nghiệp tại trung tâm âm nhạc uy tín hơn 20 năm.</p>
+      <a class="td-btn td-btn--gold" href="#ung-tuyen">Ứng tuyển ngay</a>
+    </section>
+
+    <section>
+      <h2 class="td-h2">Vị trí đang tuyển</h2>
+      <div class="td-jobs">
+        <article class="td-job">
+          <h3>Nhân viên Tư vấn nhạc cụ</h3>
+          <p class="sal">💰 8 – 14 triệu + hoa hồng</p>
+          <p>Tư vấn, bán nhạc cụ (organ, piano, guitar…) và chăm sóc khách tại trung tâm + online.</p>
+          <ul><li>Yêu âm nhạc, giao tiếp tốt</li><li>Biết chơi nhạc cụ là lợi thế</li><li>Chăm chỉ, trung thực</li></ul>
+        </article>
+        <article class="td-job">
+          <h3>Kỹ thuật viên Kiểm định / Sửa chữa</h3>
+          <p class="sal">💰 9 – 15 triệu</p>
+          <p>Kiểm tra, vệ sinh, sửa chữa nhạc cụ &amp; thiết bị âm thanh cũ trước khi bán.</p>
+          <ul><li>Có hiểu biết về nhạc cụ/âm thanh</li><li>Khéo tay, cẩn thận</li><li>Có kinh nghiệm là lợi thế</li></ul>
+        </article>
+        <article class="td-job">
+          <h3>Nhân viên Thu mua / Định giá</h3>
+          <p class="sal">💰 8 – 12 triệu + thưởng</p>
+          <p>Đến tận nơi định giá &amp; thu mua nhạc cụ, thiết bị âm thanh cũ cho khách tại TP.HCM.</p>
+          <ul><li>Có xe máy, rành đường TP.HCM</li><li>Nhanh nhẹn, thật thà</li><li>Biết định giá nhạc cụ là lợi thế</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="td-formwrap" id="ung-tuyen">
+      <h2 class="td-h2">Nộp hồ sơ ứng tuyển</h2>
+      <p style="color:#b3ad9f;margin:0 0 18px">Điền thông tin bên dưới, hoặc gọi/Zalo trực tiếp <strong style="color:var(--gold)">0938 818 871</strong> (Cô Linh) để ứng tuyển nhanh.</p>
+      <form class="td-form" id="applyForm" novalidate>
+        <input type="text" name="company" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <div class="td-row">
+          <label>Họ và tên *<input name="name" type="text" required placeholder="Nguyễn Văn A" /></label>
+          <label>Số điện thoại *<input name="phone" type="tel" required placeholder="09xx xxx xxx" /></label>
+        </div>
+        <label>Vị trí ứng tuyển
+          <select name="position">
+            <option>Nhân viên Tư vấn nhạc cụ</option>
+            <option>Kỹ thuật viên Kiểm định / Sửa chữa</option>
+            <option>Nhân viên Thu mua / Định giá</option>
+            <option>Vị trí khác</option>
+          </select>
+        </label>
+        <label>Lời nhắn<textarea name="message" rows="3" placeholder="Giới thiệu ngắn về bản thân, kinh nghiệm…"></textarea></label>
+        <div class="td-actions">
+          <button type="submit" class="td-btn td-btn--gold" id="applyBtn">Gửi hồ sơ</button>
+          <a class="td-btn td-btn--ghost" href="tel:0938818871">📞 Gọi 0938 818 871</a>
+          <a class="td-btn td-btn--ghost" href="https://zalo.me/0938818871" target="_blank" rel="noopener">💬 Zalo</a>
+        </div>
+        <p class="td-msg" id="applyMsg" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <footer class="td-footer">© <span id="y"></span> Trung Tâm Âm Nhạc Đô Rê Mi 2000 · <a href="/" style="color:var(--gold)">Trang chủ</a></footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    (function () {
+      // Paste a FREE Web3Forms access key (web3forms.com — just an email) to also
+      // email each application to the owner. Empty = the form just guides to call/Zalo.
+      var ACCESS_KEY = "";
+      var form = document.getElementById("applyForm");
+      var msg = document.getElementById("applyMsg");
+      var btn = document.getElementById("applyBtn");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        msg.className = "td-msg"; msg.textContent = "";
+        var data = Object.fromEntries(new FormData(form).entries());
+        if (data.company) return;
+        if (!data.name || !data.phone) { msg.className = "td-msg err"; msg.textContent = "Vui lòng nhập họ tên và số điện thoại."; return; }
+        function done() {
+          form.reset();
+          msg.className = "td-msg ok";
+          msg.textContent = "✅ Đã ghi nhận! Vui lòng bấm Gọi 0938 818 871 hoặc nhắn Zalo bên trên để được phản hồi nhanh nhất. Cảm ơn bạn!";
+        }
+        if (ACCESS_KEY) {
+          btn.disabled = true; btn.textContent = "Đang gửi…";
+          fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: { "Content-Type": "application/json", Accept: "application/json" },
+            body: JSON.stringify({
+              access_key: ACCESS_KEY, subject: "Hồ sơ ứng tuyển mới — Doremi 2000", from_name: "Website Doremi 2000",
+              "Họ tên": data.name, "Số điện thoại": data.phone, "Vị trí": data.position, "Lời nhắn": data.message || "",
+            }),
+          }).catch(function () {}).finally(function () { btn.disabled = false; btn.textContent = "Gửi hồ sơ"; done(); });
+        } else { done(); }
+      });
+    })();
+  </script>
+</body>
+</html>
